@@ -55,3 +55,17 @@ var specialChar = [
      "Y",
      "Z"
  ]
+
+ // slider bar value
+ var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+
+
+//  for (var i = 0; i < 10; i++) {
+//     // Randomly chooses a choice from the options array. This is the Computer's guess.
+//     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
